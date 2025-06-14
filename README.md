@@ -1,8 +1,7 @@
 # LuxeHotel Web Application
 
-## Project Overview
-
-**LuxeHotel** is a modern hotel management web application that allows users to register, book rooms, and manage their bookings, while administrators can manage rooms, bookings, and users. The system features secure authentication, role-based access, RESTful APIs, secure file uploads, CSRF protection, and a responsive Bootstrap interface.
+## Overview
+LuxeHotel is a modern hotel management web application built using CodeIgniter 3 framework. This system allows users to register, book rooms, and manage their bookings, while administrators can manage rooms, bookings, and users. The system features secure authentication, role-based access, RESTful APIs, secure file uploads, CSRF protection, and a responsive Bootstrap interface.
 
 ---
 
@@ -14,15 +13,24 @@
 - Secure file upload for profile and room images
 - CSRF protection and input validation
 - Modern, responsive UI using Bootstrap
+- Booking management system
+- Room management system
+- Customer management
+- Admin dashboard
 
+## Technical Requirements
+- PHP 7.0 or higher
+- MySQL Database
+- Apache/Nginx Web Server
+- XAMPP/WAMP/LAMP environment
+  
 ---
 
-## Installation & Setup
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/LuxeHotel.git
-   ```
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/Jehadee/LuxeHotel.git
+```
 
 2. **Move the Project to XAMPP**
    - Place the `LuxeHotel` folder inside your `C:/xampp/htdocs/` directory.
@@ -91,12 +99,20 @@
 
 ---
 
-## Security Practices
+## Security Features
+- CSRF Protection: All forms and API endpoints are protected
+- Input Validation: All user input is validated and sanitized
+- File Upload Security: Only allowed file types and sizes are accepted
+- Session Management: Secure session handling for authentication
+- Cookie Security with SameSite attribute
+- XSS Filtering
 
-- **CSRF Protection:** All forms and API endpoints are protected using CodeIgniter's CSRF token system.
-- **Input Validation:** All user input is validated and sanitized.
-- **File Upload Security:** Only allowed file types and sizes are accepted; filenames are encrypted.
-- **Session Management:** Secure session handling for authentication and role-based access.
+## Development
+- Built with CodeIgniter 3 framework
+- MVC architecture
+- Modular design for easy extension
+- RESTful API support
+- Bootstrap for responsive design
 
 ---
 
@@ -144,4 +160,4 @@ For educational purposes.
 ### Room Management (Admin)
 ![Room Management](screenshots/room_management.png)
 
-> _Place your screenshot images in a `screenshots/` folder in the project root. Update the image filenames as needed to match your actual screenshots._
+
